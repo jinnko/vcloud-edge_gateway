@@ -9,6 +9,8 @@ module Vcloud
         print resource
       end
 
+      on("-d", "--diff",  "Diff between passed in config and remote config")
+
       arg :resource
 
       description '
