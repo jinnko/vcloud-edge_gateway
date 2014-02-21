@@ -7,7 +7,7 @@ module Vcloud
       include Methadone::CLILogging
 
       main do |config_file|
-        print config_file
+        EdgeGatewayServices.new.update(config_file)
       end
 
       on("-d", "--diff",  "Diff between passed in config and remote config")
