@@ -6,8 +6,8 @@ module Vcloud
       include Methadone::Main
       include Methadone::CLILogging
 
-      main do |resource|
-        print resource
+      main do |config_file|
+        print config_file
       end
 
       on("-d", "--diff",  "Diff between passed in config and remote config")
@@ -15,7 +15,7 @@ module Vcloud
       arg :resource
 
       description '
-      vcloud-edge_gateway does something...
+      vcloud-edge_gateway allows you to configure an Edge Gateway with an input file.
 
       See https://github.com/alphagov/vcloud-edge_gateway for more info'
 
