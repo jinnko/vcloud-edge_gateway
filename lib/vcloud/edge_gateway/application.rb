@@ -4,6 +4,7 @@ module Vcloud
   module EdgeGateway
     class Application
       include Methadone::Main
+      include Methadone::CLILogging
 
       main do |resource|
         print resource
