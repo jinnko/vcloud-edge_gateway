@@ -2,12 +2,16 @@
 
 Features:
 
-  - `vcloud-configure-edge --version` now only returns the version string
+  - `vcloud-edge-configure --version` now only returns the version string
     and no usage information.
   - A side effect of changes to the executable means that exceptions from
     Vcloud::EdgeGateway and Vcloud::Core will now result in a stacktrace
     being returned by the CLI, which we'll retain for now until we refine
     the error messages.
+
+Bugfixes:
+
+    - The `vcloud-configure-edge` command has been renamed to `vcloud-edge-configure`.
 
 ## 0.5.0 (2014-05-15)
 
